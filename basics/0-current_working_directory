@@ -1,2 +1,2 @@
 #!/bin/bashd
-realpath "$0"
+/root/shell/basics
