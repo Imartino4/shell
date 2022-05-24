@@ -1,2 +1,2 @@
-#!bin/bash
-uniq
+#!/bin/bash
+uniq | sort
