@@ -1,2 +1,2 @@
 #!/bin/bash
-cat iasta >> tail -n 1
+cat iasta | tail -n 1
