@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d | wc -la
+find . -mindepth 1 -type d | wc -l  #Con find . busco en el working durectory, el type d es para buscar directorios y el mindepth 1 es para exluir en el conteo al current directory
