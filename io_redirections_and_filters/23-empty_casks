@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -typef,d -maxdepth 1 -empty -lsa
+find . -maxdepth 1 -empty -ls -a
