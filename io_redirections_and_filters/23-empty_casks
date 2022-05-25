@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -r -maxdepth 1 -empty
+find .i -maxdepth 1 -empty -lsa
