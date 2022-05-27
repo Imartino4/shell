@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -d +/ | wc -l
+cat $PATH | grep -o ':' | wc -l
