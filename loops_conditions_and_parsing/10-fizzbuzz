@@ -2,11 +2,11 @@
 #Displays number from 1 to 100, if the number is multiple of 3 and 5 display FizzBuzz, if the number is multiple of 3 display Fizz, and if the number is multiple of 3 display Buzz.
 for ((i=1; i<=100; i++))
 do
-	if (( $i % 3 == 0 )) && (( $i % 5 == 0 ));
+	if (( i % 3 == 0 )) && (( i % 5 == 0 ));
 	then	echo "FizzBuzz"
-	elif (( $i % 5 == 0 ));
+	elif (( i % 5 == 0 ));
 	then	echo "Buzz"
-	elif (( $i % 3 == 0 ));
+	elif (( i % 3 == 0 ));
 	then	echo "Fizz"
 	else
 		echo "$i"
