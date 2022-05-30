@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Order the IP apache logs for ocurrences.
+awk '(print $1,$9)' apache-access.log | sort | uniq -c | sort -nr
+
