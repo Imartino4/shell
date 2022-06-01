@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#This script display the list of currently running processes
+ps -aux | less
+#-a 
+#-u le pido la informacion detallada
+#-x agrega los procesos que no tienen control de terminal
