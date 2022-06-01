@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#This script displays a phrase when is stopped
 while :
 do	
 	echo "To infinity and beyond"
