@@ -2,6 +2,6 @@
 #This script prints a phrase indefintely with 2 seconds of delay between each line.
 while :
 do
-	echo "To infinity and boyond"
+	echo "To infinity and beyond"
 	sleep 2
 done
