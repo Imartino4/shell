@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#This script display the pid along with the process name whose name contain the word bash, without using ps command.
+pgrep bash -l
+#pgrep me devuelve los ID de los programas que se estan ejecutando, con la opcion de agregarle un nombre, con la flag -l l pido que me devuelva ademas el nombre
