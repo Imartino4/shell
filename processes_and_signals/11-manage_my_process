@@ -10,7 +10,7 @@ start() {
 }
 
 stop() {
-	./manage_my_process &
+	./manage_my_process kill -9 
 	rm /var/run/my_process.pid
 }
 
@@ -29,7 +29,7 @@ case "$1" in
 		echo "manage_my_process restarted"
 		;;
 	*)
-		echo "Usage: manage_my_process {start|stop|restart}
+		echo "Usage: manage_my_process {start|stop|restart}"
 esac
 
 exit 0	
