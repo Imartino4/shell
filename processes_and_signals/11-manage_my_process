@@ -4,14 +4,12 @@
 
 #Defino funcion start y stop, en este caso restart seria la combinacion de las dos anteriores
 start() {
-	touch /var/run/my_process.pid
 	./manage_my_process &
 	echo "$!" > /var/run/my_process.pid #$! guarda el pid del script ejecutado con un & 
 }
 
 stop() {
-	pid=$( cat /var/run/my_procces.pid )
-	kill -9 "$pid"
+	kill -9 "$(cat /var/run/my_process.pid)"
 	rm /var/run/my_process.pid
 }
 
