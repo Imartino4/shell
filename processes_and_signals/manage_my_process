@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#Using start, stop, restart, and others.
+while :
+do
+	echo "I am alive!" >> /tmp/my_process
+	sleep 2
+done 

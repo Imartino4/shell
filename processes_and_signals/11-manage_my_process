@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+#This script manage daemons and uses init scripts, using the common instructions start, restart and stop
+
+
+#Defino funcion start y stop, en este caso restart seria la combinacion de las dos anteriores
+start() {
+	./manage_my_process &
+	touch /var/run/my_process.pid
+	echo "$!" >> /var/run/my_process.pid #$! guarda el pid del script ejecutado con un & 
+}
+
+stop() {
+	./manage_my_process &
+	rm /var/run/my_process.pid
+}
+
+case "$1" in
+	start)
+		start
+		echo "manage_my_process started"
+		;;
+	stop)
+		stop
+		echo "manage_my_process stopped"
+		;;
+	restart)
+		stop
+		start
+		echo "manage_my_process restarted"
+		;;
+	*)
+		echo "Usage: manage_my_process {start|stop|restart}
+esac
+
+exit 0	
