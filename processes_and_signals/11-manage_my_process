@@ -6,7 +6,7 @@
 start() {
 	./manage_my_process &
 	touch /var/run/my_process.pid
-	echo "$!" >> /var/run/my_process.pid #$! guarda el pid del script ejecutado con un & 
+	echo "$!" > /var/run/my_process.pid #$! guarda el pid del script ejecutado con un & 
 }
 
 stop() {
