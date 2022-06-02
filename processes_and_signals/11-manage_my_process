@@ -10,7 +10,7 @@ start() {
 }
 
 stop() {
-	./manage_my_process kill -9 
+	kill -9 $!
 	rm /var/run/my_process.pid
 }
 
@@ -20,13 +20,13 @@ case "$1" in
 		echo "manage_my_process started"
 		;;
 	stop)
-		stop
 		echo "manage_my_process stopped"
+		stop
 		;;
 	restart)
+		echo "manage_my_process restarted"
 		stop
 		start
-		echo "manage_my_process restarted"
 		;;
 	*)
 		echo "Usage: manage_my_process {start|stop|restart}"
